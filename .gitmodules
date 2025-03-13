@@ -1,0 +1,4 @@
+[submodule "src/external/libsg_cmake"]
+	path = src/external/libsg_cmake
+	url = git@github.com:samangh/libsg_cmake.git
+	branch = master
