@@ -23,6 +23,18 @@ include(DefaultPreamble)
 ## Packages
 ##
 
+CPMAddPackage(NAME zstd
+  GITHUB_REPOSITORY facebook/zstd
+  VERSION 1.5.7
+  GIT_SHALLOW
+  SOURCE_SUBDIR build/cmake
+  OPTIONS
+  "BUILD_TESTING OFF"
+  "ZSTD_LEGACY_SUPPORT OFF"
+  "ZSTD_BUILD_PROGRAMS OFF"
+  "ZSTD_BUILD_SHARED OFF"
+  "ZSTD_BUILD_STATIC ON")
+
 ##
 ## Targets/Sources
 ##

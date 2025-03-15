@@ -14,6 +14,7 @@ setup_library(
   LINK_INTERFACE
   LINK_PUBLIC
   LINK_PRIVATE
+    libzstd_static
     Threads::Threads
     $<$<BOOL:${WIN32}>:Winmm>
   COMPILE_OPTIONS_INTERFACE
