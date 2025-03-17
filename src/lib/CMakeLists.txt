@@ -28,5 +28,11 @@ setup_library(
   ## Options
   GENERATE_EXPORT_HEADER
   SHARED
+  DONT_RECURSE_SRC_DIR
   # STATIC
 )
+
+target_sources(lvzstd
+  PRIVATE
+  src/lvzstd.cpp)
+

@@ -40,6 +40,7 @@ CPMAddPackage(NAME zstd
 ##
 
 add_subdirectory(lib)
+add_subdirectory(print_errors)
 
 # include(CTest)
 # if(BUILD_TESTING)
