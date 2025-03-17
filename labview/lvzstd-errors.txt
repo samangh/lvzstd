@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nidocument>
+<nicomment>
+
+<nifamily familyname="lvzstd" displayname="lvzstd">
+</nifamily>
+</nicomment>
+<nierror code="7001">
+Error (generic)
+</nierror>
+<nierror code="7010">
+Unknown frame descriptor
+</nierror>
+<nierror code="7012">
+Version not supported
+</nierror>
+<nierror code="7014">
+Unsupported frame parameter
+</nierror>
+<nierror code="7016">
+Frame requires too much memory for decoding
+</nierror>
+<nierror code="7020">
+Data corruption detected
+</nierror>
+<nierror code="7022">
+Restored data doesn't match checksum
+</nierror>
+<nierror code="7024">
+Header of Literals' block doesn't respect format specification
+</nierror>
+<nierror code="7030">
+Dictionary is corrupted
+</nierror>
+<nierror code="7032">
+Dictionary mismatch
+</nierror>
+<nierror code="7034">
+Cannot create Dictionary from provided samples
+</nierror>
+<nierror code="7040">
+Unsupported parameter
+</nierror>
+<nierror code="7041">
+Unsupported combination of parameters
+</nierror>
+<nierror code="7042">
+Parameter is out of bound
+</nierror>
+<nierror code="7044">
+tableLog requires too much memory : unsupported
+</nierror>
+<nierror code="7046">
+Unsupported max Symbol Value : too large
+</nierror>
+<nierror code="7048">
+Specified maxSymbolValue is too small
+</nierror>
+<nierror code="7049">
+This mode cannot generate an uncompressed block
+</nierror>
+<nierror code="7050">
+pledged buffer stability condition is not respected
+</nierror>
+<nierror code="7060">
+Operation not authorized at current processing stage
+</nierror>
+<nierror code="7062">
+Context should be init first
+</nierror>
+<nierror code="7064">
+Allocation error : not enough memory
+</nierror>
+<nierror code="7066">
+workSpace buffer is not large enough
+</nierror>
+<nierror code="7070">
+Destination buffer is too small
+</nierror>
+<nierror code="7072">
+Src size is incorrect
+</nierror>
+<nierror code="7074">
+Operation on NULL destination buffer
+</nierror>
+<nierror code="7080">
+Operation made no progress over multiple calls, due to output buffer being full
+</nierror>
+<nierror code="7082">
+Operation made no progress over multiple calls, due to input being empty
+</nierror>
+</nidocument>
