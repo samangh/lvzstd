@@ -16,6 +16,7 @@ LVZSTD_EXPORT int32_t get_max_compressed_size(int32_t src_size, int32_t* max_com
 LVZSTD_EXPORT int32_t compress(const uint8_t **srcHandle, uint8_t **dstHandle, int32_t* compressedSize, int32_t cLevel, int32_t noThreads);
 
 LVZSTD_EXPORT int32_t bounds_nothread(int32_t* min, int32_t* max);
+LVZSTD_EXPORT int32_t bounds_compression_level(int32_t* min, int32_t* max);
 
 LVZSTD_EXPORT int32_t get_max_uncompressed_size(const uint8_t **srcHandle, int32_t* unCompSize);
 

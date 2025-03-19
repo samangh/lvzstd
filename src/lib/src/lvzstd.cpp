@@ -69,6 +69,15 @@ int32_t bounds_nothread(int32_t* min, int32_t* max) {
     return 0;
 }
 
+int32_t bounds_compression_level(int32_t* min, int32_t* max) {
+    auto b = ZSTD_cParam_getBounds(ZSTD_c_compressionLevel);
+    *min = b.lowerBound;
+    *max= b.upperBound;
+
+    ZSTD_RETURN_ON_ERROR(b.error);
+    return 0;
+}
+
 int32_t get_max_uncompressed_size(const uint8_t **srcHandle, int32_t* unCompSize) {
     auto srcSize = **(const int32_t**)srcHandle;
     auto src = *srcHandle + sizeof(int32_t);
