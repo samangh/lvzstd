@@ -1,3 +1,5 @@
+#include <lvzstd/lvzstd.h>
+
 #include <iostream>
 #include <zstd.h>
 #include <vector>
@@ -5,6 +7,12 @@
 void print_err(size_t err) {
     std::cout << "<nierror code=\"" << 7000+err << "\">" <<std::endl;
     std::cout << std::string(ZSTD_getErrorName(-err)) << std::endl;
+    std::cout << "</nierror>" <<std::endl;
+}
+
+void print_err_own(int32_t err, std::string msg) {
+    std::cout << "<nierror code=\"" << 7000-err << "\">" <<std::endl;
+    std::cout << msg << std::endl;
     std::cout << "</nierror>" <<std::endl;
 }
 
@@ -42,5 +50,8 @@ int main(){
 
     for (auto err :vec)
         print_err(err);
+
+    print_err_own(ERROR_CONTENTSIZE, "unknowne error (e.g. given data not compressed by zstd, invalid magic number, srcSize too small)");
+    print_err_own(ERROR_CONTENTSIZE_UNKNOWN, "zstd can't determine size of original uncompressed data");
     return 0;
 }

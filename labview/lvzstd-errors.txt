@@ -89,4 +89,10 @@ Operation made no progress over multiple calls, due to output buffer being full
 <nierror code="7082">
 Operation made no progress over multiple calls, due to input being empty
 </nierror>
+<nierror code="7950">
+unknowne error (e.g. given data not compressed by zstd, invalid magic number, srcSize too small)
+</nierror>
+<nierror code="7951">
+zstd can't determine size of original uncompressed data
+</nierror>
 </nidocument>

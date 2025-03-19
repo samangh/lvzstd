@@ -33,9 +33,6 @@ int32_t version(int32_t* major, int32_t *minor, int32_t* patch) {
 int32_t compress(const uint8_t** srcHandle, uint8_t **dstHandle, int32_t* compressedSize, int32_t cLevel, int32_t noThreads) {
     thread_local auto comp_context = std::unique_ptr<ZSTD_CCtx, compression_context_deleter>(ZSTD_createCCtx());
 
-    //auto srcHndPtr= (const int32_t*)*srcHandle;
-    //int32_t srcSize= srcHndPtr[0];
-
     const int32_t srcSize = **(const int32_t**)srcHandle;
     int32_t dstSize = **(int32_t**)dstHandle;
 
@@ -69,5 +66,38 @@ int32_t bounds_nothread(int32_t* min, int32_t* max) {
     *max= b.upperBound;
 
     ZSTD_RETURN_ON_ERROR(b.error);
+    return 0;
+}
+
+int32_t get_max_uncompressed_size(const uint8_t **srcHandle, int32_t* unCompSize) {
+    auto srcSize = **(const int32_t**)srcHandle;
+    auto src = *srcHandle + sizeof(int32_t);
+
+    /* Get size of original uncompressed data */
+    auto unCompressedSize = ZSTD_getFrameContentSize(src, srcSize);
+    if (unCompressedSize == ZSTD_CONTENTSIZE_ERROR)
+        return ERROR_CONTENTSIZE;
+    if (unCompressedSize == ZSTD_CONTENTSIZE_UNKNOWN)
+        return ERROR_CONTENTSIZE_UNKNOWN;
+
+    *unCompSize = unCompressedSize;
+    return 0;
+}
+
+int32_t decompress(const uint8_t **srcHandle, uint8_t** dstHandle, int32_t* uncompressedSize) {
+    thread_local auto decomp_context =
+        std::unique_ptr<ZSTD_DCtx, decompression_context_deleter>(ZSTD_createDCtx());
+
+    const int32_t srcSize = **(const int32_t**)srcHandle;
+    int32_t dstSize = **(int32_t**)dstHandle;
+
+    auto src = *srcHandle + sizeof(int32_t);
+    auto dst = *dstHandle + sizeof(int32_t);
+
+    int32_t resultSize=ZSTD_decompressDCtx(
+        decomp_context.get(), dst, dstSize, src, srcSize);
+    ZSTD_RETURN_ON_ERROR(resultSize);
+
+    *uncompressedSize = resultSize;
     return 0;
 }
