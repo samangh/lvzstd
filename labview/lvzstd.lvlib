@@ -15,6 +15,7 @@
 		<Item Name="Zstd code to error.vi" Type="VI" URL="../Private/Zstd code to error.vi"/>
 	</Item>
 	<Item Name="Public" Type="Folder">
+		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
 		<Item Name="Library Path" Type="Folder">
 			<Item Name="Get Path.vi" Type="VI" URL="../Public/Get Path.vi"/>
 			<Item Name="Set library path.vi" Type="VI" URL="../Public/Set library path.vi"/>
@@ -27,5 +28,8 @@
 		<Item Name="Max uncompressed size.vi" Type="VI" URL="../Public/Max uncompressed size.vi"/>
 		<Item Name="Version.vi" Type="VI" URL="../Public/Version.vi"/>
 	</Item>
-	<Item Name="test.vi" Type="VI" URL="../test/test.vi"/>
+	<Item Name="Test" Type="Folder">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		<Item Name="test.vi" Type="VI" URL="../Test/test.vi"/>
+	</Item>
 </Library>
