@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15.0)
 
 project(lvzstd
-  VERSION "0.0.1"
+  VERSION "1.0.0"
   DESCRIPTION "lvzstd"
   LANGUAGES C CXX)
 
