@@ -11,6 +11,7 @@
 	<Item Name="Libraries" Type="Folder">
 		<Item Name="lvzstd-x86.dll" Type="Document" URL="../../libs/lvzstd-x86.dll"/>
 		<Item Name="lvzstd-x86_64.dll" Type="Document" URL="../../libs/lvzstd-x86_64.dll"/>
+		<Item Name="liblvzstd-x86_64.so" Type="Document" URL="../../libs/liblvzstd-x86_64.so"/>
 	</Item>
 	<Item Name="Private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>

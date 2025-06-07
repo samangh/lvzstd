@@ -10,7 +10,7 @@ cmake -S . -B %X86_DIR% ^
 cmake -S . -B %X64_DIR% ^
   -DBUILD_SHARED_LIBS=OFF -DUSE_STATIC_RUNTIME=ON -DCMAKE_BUILD_TYPE=Release
 
-cmake --build %X86_DIR%    --config Release
+cmake --build %X86_DIR% --config Release
 cmake --build %X64_DIR% --config Release
 
 copy %X64_DIR%\lib\Release\lvzstd.dll ..\libs\lvzstd-x86_64.dll
