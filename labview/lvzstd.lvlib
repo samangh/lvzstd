@@ -33,7 +33,7 @@
 			<Item Name="Decompress.vi" Type="VI" URL="../Public/API/Decompress.vi"/>
 		</Item>
 		<Item Name="Example.vi" Type="VI" URL="../Public/Example.vi"/>
-		<Item Name="VI Tree.vi" Type="VI" URL="../Public/VI Tree.vi"/>
+		<Item Name="ReadMe.vi" Type="VI" URL="../Public/ReadMe.vi"/>
 	</Item>
 	<Item Name="Libraries" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
