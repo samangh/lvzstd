@@ -19,8 +19,8 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
 		<Item Name="API" Type="Folder">
 			<Item Name="Library Path" Type="Folder">
-				<Item Name="Get Path.vi" Type="VI" URL="../Public/API/Get Path.vi"/>
-				<Item Name="Set library path.vi" Type="VI" URL="../Public/API/Set library path.vi"/>
+				<Item Name="Get Path.vi" Type="VI" URL="../Public/API/Library Path/Get Path.vi"/>
+				<Item Name="Set library path.vi" Type="VI" URL="../Public/API/Library Path/Set library path.vi"/>
 			</Item>
 			<Item Name="Advanced" Type="Folder">
 				<Item Name="Max compressed size.vi" Type="VI" URL="../Public/API/Advanced/Max compressed size.vi"/>
@@ -40,4 +40,5 @@
 		<Item Name="Example.vi" Type="VI" URL="../Public/Example.vi"/>
 		<Item Name="VI Tree.vi" Type="VI" URL="../Public/VI Tree.vi"/>
 	</Item>
+	<Item Name="lvzstd Zstandard Compression.vipb" Type="Document" URL="../lvzstd Zstandard Compression.vipb"/>
 </Library>
