@@ -13,16 +13,13 @@ Features:
   * VIs are thread safe, reentrant, and can be called in parallel
   * when compressing, can optionally set the number of threads and the compresssion level
 
-This package relies on a compile library (.dll/.so), which is also distributed here.
+This package relies on a compile library (.dll/.so), which is also distributed at `vi.lib/samangh/lvzstd Zstandard Compression/Libraries`.
 
-This library will only work on LabVIEW 2020 or later.
+Developed in LabVIEW 2020, but compatible with earlier versions of LabVIEW.
 
 ## Installation
 
-You can install it using the VI package manager.
-
-/wamplv/ is available on the [[https://www.vipm.io/package/samangh_lib_wamplv_wamp_client/][VIPM Community repository]]. Alternatively,
-the VI package is also available to download [[https://github.com/samangh/wamplv/releases][here]].
+You can install it using the VI package manager. Alternatively, the VI package is also available to download from [releases](https://github.com/samangh/wamplv/lvzstd/releases).
 
 ## License
 
