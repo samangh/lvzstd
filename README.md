@@ -39,3 +39,7 @@ Should be super easy to compress/decompress. For extra details, see
 ## License
 
 Licensed under MIT. See [LICENSE](LICENSE).
+
+Zstandard is Copyright (c) Meta Platforms and is licensed under the [the
+BSD
+License](https://raw.githubusercontent.com/facebook/zstd/refs/heads/dev/LICENSE).
