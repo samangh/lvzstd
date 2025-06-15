@@ -1,6 +1,6 @@
 # lvzstd Zstandard Compression
 
-A LabVIEW compression library using the [standard Compression algorithm](https://github.com/facebook/zstd). ZStandard is a fast lossless compression algorithm, targeting real-time compression scenarios at zlib-level and better compression ratios.
+A LabVIEW compression library using the [Zstandard compression algorithm](https://github.com/facebook/zstd). ZStandard is a fast lossless compression algorithm, targeting real-time compression scenarios at zlib-level and better compression ratios.
 
 Supports multithraded Zstandard compression/decompression on:
 
