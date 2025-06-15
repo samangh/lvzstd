@@ -32,13 +32,14 @@
 			<Item Name="Compress.vi" Type="VI" URL="../Public/API/Compress.vi"/>
 			<Item Name="Decompress.vi" Type="VI" URL="../Public/API/Decompress.vi"/>
 		</Item>
-		<Item Name="Libraries" Type="Folder">
-			<Item Name="lvzstd-x86.dll" Type="Document" URL="../Libraries/lvzstd-x86.dll"/>
-			<Item Name="lvzstd-x86_64.dll" Type="Document" URL="../Libraries/lvzstd-x86_64.dll"/>
-			<Item Name="liblvzstd-x86_64.so" Type="Document" URL="../Libraries/liblvzstd-x86_64.so"/>
-		</Item>
 		<Item Name="Example.vi" Type="VI" URL="../Public/Example.vi"/>
 		<Item Name="VI Tree.vi" Type="VI" URL="../Public/VI Tree.vi"/>
+	</Item>
+	<Item Name="Libraries" Type="Folder">
+		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
+		<Item Name="lvzstd-x86.dll" Type="Document" URL="../Libraries/lvzstd-x86.dll"/>
+		<Item Name="lvzstd-x86_64.dll" Type="Document" URL="../Libraries/lvzstd-x86_64.dll"/>
+		<Item Name="liblvzstd-x86_64.so" Type="Document" URL="../Libraries/liblvzstd-x86_64.so"/>
 	</Item>
 	<Item Name="lvzstd Zstandard Compression.vipb" Type="Document" URL="../lvzstd Zstandard Compression.vipb"/>
 </Library>
