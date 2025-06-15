@@ -33,9 +33,9 @@
 			<Item Name="Decompress.vi" Type="VI" URL="../Public/API/Decompress.vi"/>
 		</Item>
 		<Item Name="Libraries" Type="Folder">
-			<Item Name="lvzstd-x86.dll" Type="Document" URL="../../libs/lvzstd-x86.dll"/>
-			<Item Name="lvzstd-x86_64.dll" Type="Document" URL="../../libs/lvzstd-x86_64.dll"/>
-			<Item Name="liblvzstd-x86_64.so" Type="Document" URL="../../libs/liblvzstd-x86_64.so"/>
+			<Item Name="lvzstd-x86.dll" Type="Document" URL="../Libraries/lvzstd-x86.dll"/>
+			<Item Name="lvzstd-x86_64.dll" Type="Document" URL="../Libraries/lvzstd-x86_64.dll"/>
+			<Item Name="liblvzstd-x86_64.so" Type="Document" URL="../Libraries/liblvzstd-x86_64.so"/>
 		</Item>
 		<Item Name="Example.vi" Type="VI" URL="../Public/Example.vi"/>
 		<Item Name="VI Tree.vi" Type="VI" URL="../Public/VI Tree.vi"/>
