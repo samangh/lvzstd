@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-06-01 22:03:35" Modified_Date="2025-06-15 11:45:20" Creator="Saman" Comments="" ID="94c2c0e5d5114aa7f6a24eabdcf248c4">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-06-01 22:03:35" Modified_Date="2025-06-15 14:23:55" Creator="Saman" Comments="" ID="9b8ec06e90bb9276838d107fc7374066">
   <Library_General_Settings>
     <Package_File_Name>samangh_lib_lvzstd_Zstandard_Compression</Package_File_Name>
-    <Library_Version>1.0.0.4</Library_Version>
+    <Library_Version>1.0.0.8</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..</Library_Output_Folder>
@@ -36,16 +36,16 @@
 
 Features:
 
-  * VIs are thread safe, reentrant, and can be called in parallel
-  * when compressing, can optionally set tthe number of threads and the compresssion level
+  * VIs are thread safe, reentrant, and can be called in parallel;
+  * when compressing, can optionally set the number of threads and the compresssion level
 
-This package relies on a compile library (.dll/.so), which is also distributed here.</Description>
+This package relies on a compiled library (.dll/.so), which is distributed in &lt;i&gt;vi.lib/samangh/lvzstd Zstandard Compression/Libraries&lt;/i&gt;.</Description>
       <Copyright>Copyright (c) 2025, Saman Ghannadzadeh</Copyright>
       <Packager>samangh</Packager>
       <URL>https://github.com/samangh/lvzstd</URL>
-      <Release_Notes>Initial release.
+      <Release_Notes># Version 1.0.0.1 
 
-Supports multithraded Zstandard compression/decompression on:
+Initial release.  Supports multithraded Zstandard compression/decompression on:
 
   * Windows (x86, 32/64-bit)
   * Linux (x86 64-bit)
@@ -356,7 +356,7 @@ Supports multithraded Zstandard compression/decompression on:
         <Path>Public\Example.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E8E6D3937B9FEFEEF18AB427CC64D562</GUID>
+      <GUID>3BD46CBAE90E07A5C99111F2BD81F9E8</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -489,7 +489,7 @@ Supports multithraded Zstandard compression/decompression on:
         <Path>Public\API\Library Path\Set library path.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E8FF6CD87F2701643E5269A3BF97068B</GUID>
+      <GUID>899F2C8212C7E666F6D79069CCED7DDB</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -552,7 +552,7 @@ Supports multithraded Zstandard compression/decompression on:
         <Path>Public\API\Advanced\Max uncompressed size.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>596EC9D404E2DBA5E8AAF2F439E92081</GUID>
+      <GUID>FF9EB02DC9F8268487A479725FD67E8E</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

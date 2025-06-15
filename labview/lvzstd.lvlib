@@ -41,5 +41,4 @@
 		<Item Name="lvzstd-x86_64.dll" Type="Document" URL="../Libraries/lvzstd-x86_64.dll"/>
 		<Item Name="liblvzstd-x86_64.so" Type="Document" URL="../Libraries/liblvzstd-x86_64.so"/>
 	</Item>
-	<Item Name="lvzstd Zstandard Compression.vipb" Type="Document" URL="../lvzstd Zstandard Compression.vipb"/>
 </Library>
